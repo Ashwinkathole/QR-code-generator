@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <style>
+    *{
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
+    }
+    body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height:100vh;
+        background-color: antiquewhite;
+    }
+    .quiz-container{
+        height: 300px;
+        width:500px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px 0 black;
+        background-color: white;
+        position:relative;
+    }
+    #quiz-question{
+        font-size:1.5rem;
+        padding:20px;
+        text-align: center;
+    }
+    ul{
+        list-style: none;
+        margin-left: 30px;
+    }
+    li{
+        font-size: 1.2rem;
+        margin-bottom: 15px;
+        padding:5px;
+        cursor: pointer;
+    }
+    button{
+        background-color: goldenrod;
+        border: none;
+        color: black;
+        font-size: 1.2rem;
+        display: block;
+        width:100%;
+        position: absolute;
+        bottom: 0;
+        left:0;
+        padding:10px;
+        border-radius:0 0 10px 10px;
+    }
+    #submit:hover{
+        background-color: yellow;
+        cursor: pointer;
+    }
+    
+
+    </style>
+</head>
+<body>
+    <div class="quiz-container">
+        <h2 id="quiz-question">What does html stand for</h2>
+        
+        <ul>
+            <li><input type="radio"class="answer" id="option-a" name="quiz-options">
+                <label for="option-a" class="text_option_a">Option-A</label>
+            </li>
+            <li><input type="radio"class="answer" id="option-b" name="quiz-options">
+                <label for="option-b" class="text_option_b">Option-B</label>
+            </li>
+            <li><input type="radio"class="answer" id="option-c" name="quiz-options">
+                <label for="option-c" class="text_option_c">Option-C</label>
+            </li>
+            <li><input type="radio"class="answer" id="option-d" name="quiz-options">
+                <label for="option-d" class="text_option_d">Option-D</label>
+            </li>
+        </ul>
+        <button id="submit">Submit</button>
+    </div>
+
+    <script>
+        const quiz=[{
+            question:"what is the most used programming language in 2021?",
+            ans1text:"java",
+            ans2text:"c",
+            ans3text:"python",
+            ans4text:"javaScript"
+            answer:"javaScript",
+        },
+        {
+            question:"what is the most used programming language in 2021?",
+            ans1text:"java",
+            ans2text:"c",
+            ans3text:"python",
+            ans4text:"javaScript"
+            answer:"javaScript",
+        },
+        {
+            question:"what is the most used programming language in 2021?",
+            ans1text:"java",
+            ans2text:"c",
+            ans3text:"python",
+            ans4text:"javaScript"
+            answer:"javaScript",
+        },
+        {
+            question:"what is the most used programming language in 2021?",
+            ans1text:"java",
+            ans2text:"c",
+            ans3text:"python",
+            ans4text:"javaScript"
+            answer:"javaScript",
+        },
+    ]
+    const question=document.getElementById("quiz-question");
+    console.log(question);
+    </script>
+</body>
+</html>

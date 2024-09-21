@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form onsubmit="return data()">
+        <h1>user id:-<input type="text" id="a1"></h1>
+        <h1>contact:-<input type="number" id="b2"></h1>
+        <h1>password:-<input type="text" id="c3"></h1>
+        <h1>confirm password:-<input type="text" id="d4"></h1>
+        <input type="submit" value="submit your data">
+    </form>
+
+
+
+    <script>
+        function data(){
+            var a= document.getElementById("a1").value
+            var b= document.getElementById("b2").value
+            var c= document.getElementById("c3").value
+            var d= document.getElementById("d4").value
+
+            if(a=="" || b=="" || c=="" || d==""){
+                alert("all fields is mandatory");
+                return false;
+            }else if(c!=d);{
+                alert("please enter same password");
+            return false;
+        }
+        
+        
+        }
+    </script>
+</body>
+</html>
